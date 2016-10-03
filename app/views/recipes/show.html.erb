@@ -1,0 +1,21 @@
+
+
+<h1>
+  Recipes: <%= @recipe.name %>
+
+</h1>
+
+Name: <%= @recipe.name %>
+<br>
+Instructions: <%= @recipe.instructions %>
+<br>
+Servings: <%= @recipe.servings %>
+<br>
+
+
+<h3>
+  Course it belongs to:
+</h3>
+<%= link_to @recipe.course.name, course_path %>
+
+<%= link_to "Edit", edit_recipe_path %>

@@ -1,0 +1,16 @@
+<h1>Courses#show</h1>
+<p>Find me in app/views/courses/show.html.erb</p>
+
+<h1>
+  Course: <%= @course.name %>
+</h1>
+
+<h3>Recipes</h3>
+<p>
+  <% @course.recipes.each do |recipe| %>
+    <p><%= recipe.name %></p>
+  <% end %>
+</p>
+
+<%= link_to "Edit", edit_course_path %>
+<!-- <a href="edit_recipe_path">Edit</a> -->

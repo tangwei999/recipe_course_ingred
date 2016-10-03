@@ -1,0 +1,7 @@
+<h1>Courses#index</h1>
+<p>Find me in app/views/courses/index.html.erb</p>
+
+<% @courses.each do |c| %>
+  <h3><%= c.name %></h3>
+  <%= link_to 'Destroy', c, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
